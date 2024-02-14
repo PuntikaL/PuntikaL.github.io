@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Me</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Use the full height of the viewport */
+            background-color: lightpink;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button#clickButton {
+            background-color: #ff69b4; /* Same shade of pink */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 style="color: #ca1c73;">Here's your match</h1>
+            <p style="color: #da3e8c;">Like what you see? Apply to be her valentine by clicking the button below!</p>
+            <img src="mypic.jpg" alt="Her Picture" style="width: 200px; height: auto;">
+            <h3 style="line-height: 0.7;">Baifern, 20 (She/Her) </h3>
+            <h4 style="line-height: 0.7;"> Pansexual </h4>
+            <button id="clickButton" onclick="redirectToForm()">Application Form!</button>
+            <p>Interesting to be on this website? Contact the owner of the website via puntika.leepagorn@gmail.com</p>
+        </div>
+    </div>
+
+    <script>
+        function redirectToForm() {
+            // Redirect to the specified link
+            window.location.href = "https://docs.google.com/forms/d/156mpFRp_djBgplu6P8wk26wu0RUtJuoojfSZvbELbU0/edit?edit_requested=true";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Use the full height of the viewport */
+    background-color: lightpink;
+}
+
+.content {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#yesButton {
+    background-color: #ff1493; /* Darker pink */
+    color: white;
+}
+
+#noButton {
+    background-color: white;
+    color: black;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question p {
+    font-size: 24px; /* Make the question text bigger */
+    color: #ff1493; /* Dark pink color for the question text */
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+    -webkit-appearance: none;
+    background: linear-gradient(to right, #ffb6c1 0%, #ff1493 100%); /* Gradient background */
+    border-radius: 5px;
+    height: 20px; /* Increase height of the scale */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fff; /* Thumb color */
+    border-radius: 50%;
+    border: 2px solid #ff1493; /* Border color */
+    cursor: pointer;
+    margin-top: -10px; /* Align the thumb with the track */
+}
+
+.choice button {
+    background-color: #ff69b4; /* Any shade of pink */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.choice button:last-child {
+    margin-right: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #ff1493;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #ff1493;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
